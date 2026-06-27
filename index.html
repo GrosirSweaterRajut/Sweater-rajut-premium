@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Sweater Rajut Grosir | Malik x Denzi Majalaya</title>
+<style>
+  :root{--bg:#0f172a; --card:#1e293b; --text:#f8fafc; --muted:#94a3b8; --accent:#ee4d2d; --wa:#25D366; --accent2:#fbbf24;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--text)}
+  header{padding:20px;text-align:center;background:var(--card);border-bottom:1px solid #334155;position:sticky;top:0;z-index:10}
+  header h1{margin:0;font-size:20px}
+  header p{margin:5px 0 0;color:var(--muted);font-size:13px}
+  .search-box{max-width:500px;margin:12px auto 0;padding:0 16px}
+  .search-box input{width:100%;padding:10px 12px;border-radius:10px;border:1px solid #334155;background:#0b1220;color:var(--text);font-size:14px;outline:none}
+  .search-box input:focus{border-color:var(--accent)}
+  .container{max-width:1200px;margin:0 auto;padding:16px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+  @media(min-width:768px){.grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}}
+  .card{background:var(--card);border:1px solid #334155;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:.2s}
+  .card:hover{transform:translateY(-2px);border-color:#475569}
+  .card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#0b1220}
+  .card-body{padding:10px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .title{font-weight:600;font-size:13px;line-height:1.3;height:34px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+  .price{color:var(--accent2);font-weight:800;font-size:14px}
+  .btn-wrap{display:flex;gap:6px;margin-top:auto}
+  .btn{flex:1;padding:8px;border-radius:8px;text-align:center;font-weight:700;font-size:12px;text-decoration:none;color:#fff}
+  .btn-shopee{background:var(--accent)}
+  .btn-wa{background:var(--wa);color:#0f172a}
+  .btn:hover{filter:brightness(1.1)}
+  .hidden{display:none !important}
+  footer{text-align:center;padding:20px;color:var(--muted);font-size:12px;border-top:1px solid #334155;margin-top:20px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Katalog Sweater Rajut Grosir</h1>
+  <p>Malik x Denzi | Min 10 Pcs | Harga Pabrik Majalaya</p>
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Cari produk... misal: cream, hitam, oversize">
+  </div>
+</header>
+
+<main class="container">
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>
+  © 2026 Malik x Denzi | Majalaya, Kab. Bandung
+</footer>
+
+<script>
+const LINK_SHOPEE = "https://shopee.co.id/malik_x_denzi";
+const LINK_WA = "https://wa.me/628886225629?text=Halo%20Malik%20x%20Denzi,%20mau%20tanya%20produk%20ini";
+
+const PRODUK = [
+  {nama: "NAMA PRODUK 1", harga: "Rp 0", img: "https://i.ibb.co.com/MkYYkxgR/Screenshot-20260626-214136.png"},
+  {nama: "NAMA PRODUK 2", harga: "Rp 0", img: "https://i.ibb.co.com/8n5ZTmN1/Screenshot-20260626-213414.png"},
+  {nama: "NAMA PRODUK 3", harga: "Rp 0", img: "https://i.ibb.co.com/wFp3rYkN/Screenshot-20260626-195935.png"},
+  {nama: "NAMA PRODUK 4", harga: "Rp 0", img: "https://i.ibb.co.com/My39WLC4/Screenshot-20260626-194024.png"},
+  {nama: "NAMA PRODUK 5", harga: "Rp 0", img: "https://i.ibb.co.com/SD1gQ9jN/Screenshot-20260626-192612.png"},
+  {nama: "NAMA PRODUK 6", harga: "Rp 0", img: "https://i.ibb.co.com/mCx9Bkm8/Screenshot-20260626-191736.png"},
+  {nama: "NAMA PRODUK 7", harga: "Rp 0", img: "https://i.ibb.co.com/4Zvn1vxk/Screenshot-20260624-220058.png"},
+  {nama: "NAMA PRODUK 8", harga: "Rp 0", img: "https://i.ibb.co.com/7dWSzS8p/Screenshot-20260624-210854.png"},
+  {nama: "NAMA PRODUK 9", harga: "Rp 0", img: "https://i.ibb.co.com/Dhqb9YH/Screenshot-20260624-205917.png"},
+  {nama: "NAMA PRODUK 10", harga: "Rp 0", img: "https://i.ibb.co.com/d0Wgd78T/Screenshot-20260624-205021.png"},
+  {nama: "NAMA PRODUK 11", harga: "Rp 0", img: "https://i.ibb.co.com/pCSsWHD/Screenshot-20260624-191601.png"},
+  {nama: "NAMA PRODUK 12", harga: "Rp 0", img: "https://i.ibb.co.com/9mPYZXJL/Screenshot-20260624-174108.png"},
+  {nama: "NAMA PRODUK 13", harga: "Rp 0", img: "https://i.ibb.co.com/bMKxvgYb/Screenshot-20260624-145959.png"},
+  {nama: "NAMA PRODUK 14", harga: "Rp 0", img: "https://i.ibb.co.com/TDPxLkJ1/Screenshot-20260624-135608.png"},
+  {nama: "NAMA PRODUK 15", harga: "Rp 0", img: "https://i.ibb.co.com/Cp9Tg0pB/Screenshot-20260624-134002.png"},
+  {nama: "NAMA PRODUK 16", harga: "Rp 0", img: "https://i.ibb.co.com/KzDdjvPw/Screenshot-20260624-101938.png"},
+  {nama: "NAMA PRODUK 17", harga: "Rp 0", img: "https://i.ibb.co.com/gL60j875/Screenshot-20260624-072459.png"},
+  {nama: "NAMA PRODUK 18", harga: "Rp 0", img: "https://i.ibb.co.com/5gVrYvkn/Screenshot-20260624-071345.png"},
+  {nama: "NAMA PRODUK 19", harga: "Rp 0", img: "https://i.ibb.co.com/ds1zPhQ3/Screenshot-20260623-210746.png"},
+  {nama: "NAMA PRODUK 20", harga: "Rp 0", img: "https://i.ibb.co.com/7NVM6gKf/Screenshot-20260623-190044.png"},
+  {nama: "NAMA PRODUK 21", harga: "Rp 0", img: "https://i.ibb.co.com/FqX3sCkS/Screenshot-20260622-153953.png"},
+  {nama: "NAMA PRODUK 22", harga: "Rp 0", img: "https://i.ibb.co.com/fd1HF4j9/Screenshot-20260622-163825.png"},
+  {nama: "NAMA PRODUK 23", harga: "Rp 0", img: "https://i.ibb.co.com/YB61y752/Screenshot-20260622-190123.png"},
+  {nama: "NAMA PRODUK 24", harga: "Rp 0", img: "https://i.ibb.co.com/gLptXPwV/Screenshot-20260622-190659.png"},
+  {nama: "NAMA PRODUK 25", harga: "Rp 0", img: "https://i.ibb.co.com/BVzH4f8X/Screenshot-20260622-191711.png"},
+  {nama: "NAMA PRODUK 26", harga: "Rp 0", img: "https://i.ibb.co.com/k2Jc6ZxL/Screenshot-20260622-193417.png"},
+  {nama: "NAMA PRODUK 27", harga: "Rp 0", img: "https://i.ibb.co.com/XfhpRY3p/Screenshot-20260622-194315.png"},
+  {nama: "NAMA PRODUK 28", harga: "Rp 0", img: "https://i.ibb.co.com/WwV1C0f/Screenshot-20260622-194828.png"},
+  {nama: "NAMA PRODUK 29", harga: "Rp 0", img: "https://i.ibb.co.com/4gn5106W/Screenshot-20260622-195325.png"},
+];
+
+const grid = document.getElementById('grid');
+const searchInput = document.getElementById('search');
+
+function renderProduk(list) {
+  grid.innerHTML = '';
+  list.forEach(p => {
+    grid.insertAdjacentHTML('beforeend', `
+      <div class="card" data-nama="${p.nama.toLowerCase()}">
+        <img src="${p.img}" alt="${p.nama}" loading="lazy">
+        <div class="card-body">
+          <div class="title">${p.nama}</div>
+          <div class="price">${p.harga}</div>
+          <div class="btn-wrap">
+            <a class="btn btn-shopee" href="${LINK_SHOPEE}" target="_blank" rel="noopener">Shopee</a>
+            <a class="btn btn-wa" href="${LINK_WA}%20${encodeURIComponent(p.nama)}" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+    `);
+  });
+}
+
+renderProduk(PRODUK);
+
+// Fitur Cari
+searchInput.addEventListener('input', (e) => {
+  const keyword = e.target.value.toLowerCase();
+  const filtered = PRODUK.filter(p => p.nama.toLowerCase().includes(keyword));
+  renderProduk(filtered);
+});
+</script>
+
+</body>
+</html>
