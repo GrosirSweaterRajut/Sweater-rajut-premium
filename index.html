@@ -4,49 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KATALOG SWEATER RAJUT PREMIUM | Malik x Denzi</title>
-    
-    <!-- Biar Preview WA Cantik -->
     <meta property="og:title" content="Katalog Grosir Sweater Rajut Premium Malik x Denzi" />
     <meta property="og:description" content="Min Order 10 Pcs Campur Model | Harga Pabrik Majalaya. Klik untuk lihat 61 model terbaru." />
     <meta property="og:image" content="https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" />
     <meta property="og:url" content="https://s.id/SweaterRajutpremium" />
-
     <style>
-        :root {
-            --primary-color: #2c3e50;
-            --accent-color: #e67e22;
-            --bg-color: #f4f4f4;
-            --card-bg: #ffffff;
-        }
+        :root { --primary-color: #2c3e50; --accent-color: #e67e22; --bg-color: #f4f4f4; --card-bg: #ffffff; }
         body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: var(--bg-color); color: #333; }
         .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-        
         header { background: var(--primary-color); color: white; padding: 30px 20px; text-align: center; border-radius: 8px; margin-bottom: 20px; }
         header h1 { margin: 0; font-size: 2em; }
-        header p { margin: 10px 0 0; font-size: 1.1em; opacity: 0.9; }
         .syarat { background: var(--accent-color); display: inline-block; padding: 8px 15px; border-radius: 20px; margin-top: 15px; font-weight: bold; }
-        .header-btn { display: flex; gap: 10px; justify-content: center; margin-top: 20px; }
+        .header-btn { display: flex; gap: 10px; justify-content: center; margin-top: 20px; flex-wrap: wrap; }
         .btn { padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; color: white; }
         .btn-shopee { background-color: #EE4D2D; }
         .btn-wa { background-color: #25D366; }
-
         .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
         .product-card { background: var(--card-bg); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.2s; }
         .product-card:hover { transform: translateY(-5px); }
         .product-card img { width: 100%; height: 220px; object-fit: cover; }
         .product-info { padding: 15px; }
-        .product-info h3 { margin: 0 0 8px; font-size: 1em; }
+        .product-info h3 { margin: 0 0 8px; font-size: 1em; height: 40px; overflow: hidden; }
         .product-info .price { color: var(--accent-color); font-weight: bold; font-size: 1.2em; margin-bottom: 10px; }
         .wa-btn { display: block; text-align: center; background-color: #25D366; color: white; padding: 10px; border-radius: 5px; text-decoration: none; font-weight: bold; }
-        
         footer { text-align: center; padding: 30px 20px; margin-top: 40px; background: var(--primary-color); color: white; border-radius: 8px; }
-        footer h3 { margin: 0 0 10px; }
-        footer p { margin: 5px 0; opacity: 0.8; }
         .wa-float { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 100; }
     </style>
 </head>
 <body>
-
     <div class="container">
         <header>
             <h1>📦 KATALOG GROSIR SWEATER RAJUT PREMIUM</h1>
@@ -57,26 +42,77 @@
                 <a href="https://wa.me/628886225629?text=Halo%20Admin%20Malik%20x%20Denzi,%20saya%20dari%20Katalog%20Web" class="btn btn-wa" target="_blank">Chat Admin WA</a>
             </div>
         </header>
-
-        <div class="product-grid" id="product-grid">
-            <!-- PRODUK OTOMATIS MUNCUL DARI SINI -->
-        </div>
-
+        <div class="product-grid" id="product-grid"></div>
         <footer>
             <h3>Terima Kasih Sudah Berkunjung 🙏</h3>
             <p>Untuk Order & Tanya Stok, Langsung Klik Tombol WhatsApp di Bawah Ya Kak</p>
             <p><strong>Admin Malik x Denzi | Majalaya, Kab. Bandung</strong></p>
         </footer>
     </div>
-
     <a href="https://wa.me/628886225629?text=Halo%20Admin,%20saya%20mau%20order%20dari%20Katalog%20Web" class="wa-float" target="_blank">💬</a>
-
     <script>
         const products = [
-            { id: 1, nama: "NAMA PRODUK 1", harga: "Rp 0", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
-            { id: 2, nama: "NAMA PRODUK 2", harga: "Rp 0", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
-            { id: 3, nama: "NAMA PRODUK 3", harga: "Rp 0", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
-            // ... LANJUTKAN SAMPAI 61 PRODUK ...
+            { id: 1, nama: "Sweater Rajut Model 01", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 2, nama: "Sweater Rajut Model 02", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 3, nama: "Sweater Rajut Model 03", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 4, nama: "Sweater Rajut Model 04", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 5, nama: "Sweater Rajut Model 05", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 6, nama: "Sweater Rajut Model 06", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 7, nama: "Sweater Rajut Model 07", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 8, nama: "Sweater Rajut Model 08", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 9, nama: "Sweater Rajut Model 09", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 10, nama: "Sweater Rajut Model 10", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 11, nama: "Sweater Rajut Model 11", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 12, nama: "Sweater Rajut Model 12", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 13, nama: "Sweater Rajut Model 13", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 14, nama: "Sweater Rajut Model 14", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 15, nama: "Sweater Rajut Model 15", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 16, nama: "Sweater Rajut Model 16", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 17, nama: "Sweater Rajut Model 17", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 18, nama: "Sweater Rajut Model 18", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 19, nama: "Sweater Rajut Model 19", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 20, nama: "Sweater Rajut Model 20", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 21, nama: "Sweater Rajut Model 21", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 22, nama: "Sweater Rajut Model 22", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 23, nama: "Sweater Rajut Model 23", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 24, nama: "Sweater Rajut Model 24", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 25, nama: "Sweater Rajut Model 25", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 26, nama: "Sweater Rajut Model 26", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 27, nama: "Sweater Rajut Model 27", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 28, nama: "Sweater Rajut Model 28", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 29, nama: "Sweater Rajut Model 29", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 30, nama: "Sweater Rajut Model 30", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 31, nama: "Sweater Rajut Model 31", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 32, nama: "Sweater Rajut Model 32", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 33, nama: "Sweater Rajut Model 33", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 34, nama: "Sweater Rajut Model 34", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 35, nama: "Sweater Rajut Model 35", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 36, nama: "Sweater Rajut Model 36", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 37, nama: "Sweater Rajut Model 37", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 38, nama: "Sweater Rajut Model 38", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 39, nama: "Sweater Rajut Model 39", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 40, nama: "Sweater Rajut Model 40", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 41, nama: "Sweater Rajut Model 41", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 42, nama: "Sweater Rajut Model 42", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 43, nama: "Sweater Rajut Model 43", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 44, nama: "Sweater Rajut Model 44", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 45, nama: "Sweater Rajut Model 45", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 46, nama: "Sweater Rajut Model 46", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 47, nama: "Sweater Rajut Model 47", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 48, nama: "Sweater Rajut Model 48", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 49, nama: "Sweater Rajut Model 49", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 50, nama: "Sweater Rajut Model 50", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 51, nama: "Sweater Rajut Model 51", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 52, nama: "Sweater Rajut Model 52", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 53, nama: "Sweater Rajut Model 53", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 54, nama: "Sweater Rajut Model 54", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 55, nama: "Sweater Rajut Model 55", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 56, nama: "Sweater Rajut Model 56", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 57, nama: "Sweater Rajut Model 57", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 58, nama: "Sweater Rajut Model 58", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 59, nama: "Sweater Rajut Model 59", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 60, nama: "Sweater Rajut Model 60", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" },
+            { id: 61, nama: "Sweater Rajut Model 61", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BKfbpDxT/logo-shopee.jpg" }
         ];
 
         const grid = document.getElementById('product-grid');
