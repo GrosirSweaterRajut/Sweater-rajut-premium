@@ -26,9 +26,9 @@
         .product-info { padding: 15px; }
         .product-info h3 { margin: 0 0 8px; font-size: 1em; height: 40px; overflow: hidden; }
         .product-info .price { color: var(--accent-color); font-weight: bold; font-size: 1.2em; margin-bottom: 10px; }
-        .wa-btn { display: block; text-align: center; background-color: #25D366; color: white; padding: 10px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+        .shopee-btn { display: block; text-align: center; background-color: #EE4D2D; color: white; padding: 10px; border-radius: 5px; text-decoration: none; font-weight: bold; }
         footer { text-align: center; padding: 30px 20px; margin-top: 40px; background: var(--primary-color); color: white; border-radius: 8px; }
-        .wa-float { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 100; }
+        .wa-float { position: fixed; bottom: 20px; right: 20px; background-color: #EE4D2D; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 100; }
     </style>
 </head>
 <body>
@@ -45,74 +45,74 @@
         <div class="product-grid" id="product-grid"></div>
         <footer>
             <h3>Terima Kasih Sudah Berkunjung 🙏</h3>
-            <p>Untuk Order & Tanya Stok, Langsung Klik Tombol WhatsApp di Bawah Ya Kak</p>
+            <p>Untuk Order, Langsung Klik Tombol Shopee di Bawah Ya Kak</p>
             <p><strong>Admin Malik x Denzi | Majalaya, Kab. Bandung</strong></p>
         </footer>
     </div>
-    <a href="https://wa.me/628886225629?text=Halo%20Admin,%20saya%20mau%20order%20dari%20Katalog%20Web" class="wa-float" target="_blank">💬</a>
+    <a href="https://shopee.co.id/malik_x_denzi" class="wa-float" target="_blank">🛒</a>
     <script>
         const products = [
-            { id: 1, nama: "Sweater Rajut Model 01", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/FqX3sCkS/Screenshot-20260622-153953.png" },
-            { id: 2, nama: "Sweater Rajut Model 02", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/fd1HF4j9/Screenshot-20260622-163825.png" },
-            { id: 3, nama: "Sweater Rajut Model 03", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/YB61y752/Screenshot-20260622-190123.png" },
-            { id: 4, nama: "Sweater Rajut Model 04", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/gLptXPwV/Screenshot-20260622-190659.png" },
-            { id: 5, nama: "Sweater Rajut Model 05", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/9KXtCB1/Screenshot-20260622-191659.png" },
-            { id: 6, nama: "Sweater Rajut Model 06", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/fY9nMTh8/Screenshot-20260622-193431.png" },
-            { id: 7, nama: "Sweater Rajut Model 07", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/XfhpRY3p/Screenshot-20260622-194315.png" },
-            { id: 8, nama: "Sweater Rajut Model 08", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/4gn5106W/Screenshot-20260622-195325.png" },
-            { id: 9, nama: "Sweater Rajut Model 09", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/r2q8v1Hn/Screenshot-20260622-213754.png" },
-            { id: 10, nama: "Sweater Rajut Model 10", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/My8JGsY0/Screenshot-20260622-224326.png" },
-            { id: 11, nama: "Sweater Rajut Model 11", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/F4P78RPR/Screenshot-20260622-225237.png" },
-            { id: 12, nama: "Sweater Rajut Model 12", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/jkKfmRZG/Screenshot-20260623-075728.png" },
-            { id: 13, nama: "Sweater Rajut Model 13", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/kgnJ8tx8/Screenshot-20260623-080630.png" },
-            { id: 14, nama: "Sweater Rajut Model 14", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/G4xpY34h/Screenshot-20260623-081646.png" },
-            { id: 15, nama: "Sweater Rajut Model 15", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/BH72915H/Screenshot-20260623-093217.png" },
-            { id: 16, nama: "Sweater Rajut Model 16", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/6R4x3SBS/Screenshot-20260623-093925.png" },
-            { id: 17, nama: "Sweater Rajut Model 17", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/9kLnVVCx/Screenshot-20260623-112813.png" },
-            { id: 18, nama: "Sweater Rajut Model 18", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/XxP9kkr3/Screenshot-20260623-113413.png" },
-            { id: 19, nama: "Sweater Rajut Model 19", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/rR1xDWyt/Screenshot-20260623-114137.png" },
-            { id: 20, nama: "Sweater Rajut Model 20", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/pSHh5rg/Screenshot-20260623-120934.png" },
-            { id: 21, nama: "Sweater Rajut Model 21", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/PvM9jskT/Screenshot-20260623-122450.png" },
-            { id: 22, nama: "Sweater Rajut Model 22", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/Y7m4851B/Screenshot-20260623-124404.png" },
-            { id: 23, nama: "Sweater Rajut Model 23", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/kskj460Q/Screenshot-20260623-151814.png" },
-            { id: 24, nama: "Sweater Rajut Model 24", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/7JtGz4Nm/Screenshot-20260623-152639.png" },
-            { id: 25, nama: "Sweater Rajut Model 25", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/fztDNcq8/Screenshot-20260623-182107.png" },
-            { id: 26, nama: "Sweater Rajut Model 26", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/spRhN208/Screenshot-20260623-182547.png" },
-            { id: 27, nama: "Sweater Rajut Model 27", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/Hk4DwDG/Screenshot-20260623-184739.png" },
-            { id: 28, nama: "Sweater Rajut Model 28", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/XxXbs3vW/Screenshot-20260623-190018.png" },
-            { id: 29, nama: "Sweater Rajut Model 29", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/hJWrxyvJ/Screenshot-20260623-210755.png" },
-            { id: 30, nama: "Sweater Rajut Model 30", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/q32CDZvV/Screenshot-20260624-065804.png" },
-            { id: 31, nama: "Sweater Rajut Model 31", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/NMfqndB/Screenshot-20260624-071405.png" },
-            { id: 32, nama: "Sweater Rajut Model 32", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/gL60j875/Screenshot-20260624-072459.png" },
-            { id: 33, nama: "Sweater Rajut Model 33", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/G4TTW46R/Screenshot-20260624-073501.png" },
-            { id: 34, nama: "Sweater Rajut Model 34", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/LDS8MVV0/Screenshot-20260624-101749.png" },
-            { id: 35, nama: "Sweater Rajut Model 35", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/KzDdjvPw/Screenshot-20260624-101938.png" },
-            { id: 36, nama: "Sweater Rajut Model 36", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/h1hYmbtq/Screenshot-20260624-112359.png" },
-            { id: 37, nama: "Sweater Rajut Model 37", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/YFS0NWj7/Screenshot-20260624-113547.png" },
-            { id: 38, nama: "Sweater Rajut Model 38", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/Cp9Tg0pB/Screenshot-20260624-134002.png" },
-            { id: 39, nama: "Sweater Rajut Model 39", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/VY5T7jJ3/Screenshot-20260624-135519.png" },
-            { id: 40, nama: "Sweater Rajut Model 40", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/d4fP5KhG/Screenshot-20260624-145948.png" },
-            { id: 41, nama: "Sweater Rajut Model 41", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/8ZRzGhr/Screenshot-20260624-164752.png" },
-            { id: 42, nama: "Sweater Rajut Model 42", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/9mPYZXJL/Screenshot-20260624-174108.png" },
-            { id: 43, nama: "Sweater Rajut Model 43", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/Pzb5V0GL/Screenshot-20260624-174902.png" },
-            { id: 44, nama: "Sweater Rajut Model 44", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/ynPPpZjV/Screenshot-20260624-190723.png" },
-            { id: 45, nama: "Sweater Rajut Model 45", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/ccz9D2W5/Screenshot-20260624-191528.png" },
-            { id: 46, nama: "Sweater Rajut Model 46", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/KnqT20M/Screenshot-20260624-204027.png" },
-            { id: 47, nama: "Sweater Rajut Model 47", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/d0Wgd78T/Screenshot-20260624-205021.png" },
-            { id: 48, nama: "Sweater Rajut Model 48", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/Dhqb9YH/Screenshot-20260624-205917.png" },
-            { id: 49, nama: "Sweater Rajut Model 49", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/7dWSzS8p/Screenshot-20260624-210854.png" },
-            { id: 50, nama: "Sweater Rajut Model 50", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/8gn0dzdJ/Screenshot-20260624-220035.png" },
-            { id: 51, nama: "Sweater Rajut Model 51", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/4nb2mcjv/Screenshot-20260624-221520.png" },
-            { id: 52, nama: "Sweater Rajut Model 52", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/nq6GG86x/Screenshot-20260624-224726.png" },
-            { id: 53, nama: "Sweater Rajut Model 53", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/s9qbCf0h/Screenshot-20260626-191714.png" },
-            { id: 54, nama: "Sweater Rajut Model 54", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/TBLW7hY3/Screenshot-20260626-192504.png" },
-            { id: 55, nama: "Sweater Rajut Model 55", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/TBMCcB4B/Screenshot-20260626-193319.png" },
-            { id: 56, nama: "Sweater Rajut Model 56", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/gLXV2fK3/Screenshot-20260626-194924.png" },
-            { id: 57, nama: "Sweater Rajut Model 57", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/B2RqsW06/Screenshot-20260626-195855.png" },
-            { id: 58, nama: "Sweater Rajut Model 58", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/qY8TG5gz/Screenshot-20260626-200926.png" },
-            { id: 59, nama: "Sweater Rajut Model 59", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/CpFgY2Gv/Screenshot-20260626-212437.png" },
-            { id: 60, nama: "Sweater Rajut Model 60", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/qM5zVyvj/Screenshot-20260626-213345.png" },
-{ id: 61, nama: "Sweater Rajut Model 61", harga: "Rp 75.000", gambar: "https://i.ibb.co.com/MkYYkxgR/Screenshot-20260626-214136.png" }
+            { id: 1, nama: "Sweater Rajut Model 01", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/FqX3sCkS/Screenshot-20260622-153953.png" },
+            { id: 2, nama: "Sweater Rajut Model 02", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/fd1HF4j9/Screenshot-20260622-163825.png" },
+            { id: 3, nama: "Sweater Rajut Model 03", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/YB61y752/Screenshot-20260622-190123.png" },
+            { id: 4, nama: "Sweater Rajut Model 04", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/gLptXPwV/Screenshot-20260622-190659.png" },
+            { id: 5, nama: "Sweater Rajut Model 05", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/9KXtCB1/Screenshot-20260622-191659.png" },
+            { id: 6, nama: "Sweater Rajut Model 06", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/fY9nMTh8/Screenshot-20260622-193431.png" },
+            { id: 7, nama: "Sweater Rajut Model 07", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/XfhpRY3p/Screenshot-20260622-194315.png" },
+            { id: 8, nama: "Sweater Rajut Model 08", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/4gn5106W/Screenshot-20260622-195325.png" },
+            { id: 9, nama: "Sweater Rajut Model 09", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/r2q8v1Hn/Screenshot-20260622-213754.png" },
+            { id: 10, nama: "Sweater Rajut Model 10", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/My8JGsY0/Screenshot-20260622-224326.png" },
+            { id: 11, nama: "Sweater Rajut Model 11", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/F4P78RPR/Screenshot-20260622-225237.png" },
+            { id: 12, nama: "Sweater Rajut Model 12", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/jkKfmRZG/Screenshot-20260623-075728.png" },
+            { id: 13, nama: "Sweater Rajut Model 13", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/kgnJ8tx8/Screenshot-20260623-080630.png" },
+            { id: 14, nama: "Sweater Rajut Model 14", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/G4xpY34h/Screenshot-20260623-081646.png" },
+            { id: 15, nama: "Sweater Rajut Model 15", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/BH72915H/Screenshot-20260623-093217.png" },
+            { id: 16, nama: "Sweater Rajut Model 16", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/6R4x3SBS/Screenshot-20260623-093925.png" },
+            { id: 17, nama: "Sweater Rajut Model 17", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/9kLnVVCx/Screenshot-20260623-112813.png" },
+            { id: 18, nama: "Sweater Rajut Model 18", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/XxP9kkr3/Screenshot-20260623-113413.png" },
+            { id: 19, nama: "Sweater Rajut Model 19", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/rR1xDWyt/Screenshot-20260623-114137.png" },
+            { id: 20, nama: "Sweater Rajut Model 20", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/pSHh5rg/Screenshot-20260623-120934.png" },
+            { id: 21, nama: "Sweater Rajut Model 21", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/PvM9jskT/Screenshot-20260623-122450.png" },
+            { id: 22, nama: "Sweater Rajut Model 22", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/Y7m4851B/Screenshot-20260623-124404.png" },
+            { id: 23, nama: "Sweater Rajut Model 23", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/kskj460Q/Screenshot-20260623-151814.png" },
+            { id: 24, nama: "Sweater Rajut Model 24", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/7JtGz4Nm/Screenshot-20260623-152639.png" },
+            { id: 25, nama: "Sweater Rajut Model 25", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/fztDNcq8/Screenshot-20260623-182107.png" },
+            { id: 26, nama: "Sweater Rajut Model 26", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/spRhN208/Screenshot-20260623-182547.png" },
+            { id: 27, nama: "Sweater Rajut Model 27", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/Hk4DwDG/Screenshot-20260623-184739.png" },
+            { id: 28, nama: "Sweater Rajut Model 28", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/XxXbs3vW/Screenshot-20260623-190018.png" },
+            { id: 29, nama: "Sweater Rajut Model 29", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/hJWrxyvJ/Screenshot-20260623-210755.png" },
+            { id: 30, nama: "Sweater Rajut Model 30", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/q32CDZvV/Screenshot-20260624-065804.png" },
+            { id: 31, nama: "Sweater Rajut Model 31", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/NMfqndB/Screenshot-20260624-071405.png" },
+            { id: 32, nama: "Sweater Rajut Model 32", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/gL60j875/Screenshot-20260624-072459.png" },
+            { id: 33, nama: "Sweater Rajut Model 33", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/G4TTW46R/Screenshot-20260624-073501.png" },
+            { id: 34, nama: "Sweater Rajut Model 34", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/LDS8MVV0/Screenshot-20260624-101749.png" },
+            { id: 35, nama: "Sweater Rajut Model 35", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/KzDdjvPw/Screenshot-20260624-101938.png" },
+            { id: 36, nama: "Sweater Rajut Model 36", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/h1hYmbtq/Screenshot-20260624-112359.png" },
+            { id: 37, nama: "Sweater Rajut Model 37", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/YFS0NWj7/Screenshot-20260624-113547.png" },
+            { id: 38, nama: "Sweater Rajut Model 38", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/Cp9Tg0pB/Screenshot-20260624-134002.png" },
+            { id: 39, nama: "Sweater Rajut Model 39", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/VY5T7jJ3/Screenshot-20260624-135519.png" },
+            { id: 40, nama: "Sweater Rajut Model 40", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/d4fP5KhG/Screenshot-20260624-145948.png" },
+            { id: 41, nama: "Sweater Rajut Model 41", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/8ZRzGhr/Screenshot-20260624-164752.png" },
+            { id: 42, nama: "Sweater Rajut Model 42", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/9mPYZXJL/Screenshot-20260624-174108.png" },
+            { id: 43, nama: "Sweater Rajut Model 43", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/Pzb5V0GL/Screenshot-20260624-174902.png" },
+            { id: 44, nama: "Sweater Rajut Model 44", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/ynPPpZjV/Screenshot-20260624-190723.png" },
+            { id: 45, nama: "Sweater Rajut Model 45", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/ccz9D2W5/Screenshot-20260624-191528.png" },
+            { id: 46, nama: "Sweater Rajut Model 46", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/KnqT20M/Screenshot-20260624-204027.png" },
+            { id: 47, nama: "Sweater Rajut Model 47", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/d0Wgd78T/Screenshot-20260624-205021.png" },
+            { id: 48, nama: "Sweater Rajut Model 48", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/Dhqb9YH/Screenshot-20260624-205917.png" },
+            { id: 49, nama: "Sweater Rajut Model 49", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/7dWSzS8p/Screenshot-20260624-210854.png" },
+            { id: 50, nama: "Sweater Rajut Model 50", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/8gn0dzdJ/Screenshot-20260624-220035.png" },
+            { id: 51, nama: "Sweater Rajut Model 51", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/4nb2mcjv/Screenshot-20260624-221520.png" },
+            { id: 52, nama: "Sweater Rajut Model 52", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/nq6GG86x/Screenshot-20260624-224726.png" },
+            { id: 53, nama: "Sweater Rajut Model 53", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/s9qbCf0h/Screenshot-20260626-191714.png" },
+            { id: 54, nama: "Sweater Rajut Model 54", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/TBLW7hY3/Screenshot-20260626-192504.png" },
+            { id: 55, nama: "Sweater Rajut Model 55", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/TBMCcB4B/Screenshot-20260626-193319.png" },
+            { id: 56, nama: "Sweater Rajut Model 56", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/gLXV2fK3/Screenshot-20260626-194924.png" },
+            { id: 57, nama: "Sweater Rajut Model 57", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/B2RqsW06/Screenshot-20260626-195855.png" },
+            { id: 58, nama: "Sweater Rajut Model 58", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/qY8TG5gz/Screenshot-20260626-200926.png" },
+            { id: 59, nama: "Sweater Rajut Model 59", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/CpFgY2Gv/Screenshot-20260626-212437.png" },
+            { id: 60, nama: "Sweater Rajut Model 60", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/qM5zVyvj/Screenshot-20260626-213345.png" },
+            { id: 61, nama: "Sweater Rajut Model 61", harga: "Rp 25.000", gambar: "https://i.ibb.co.com/MkYYkxgR/Screenshot-20260626-214136.png" }
         ];
 
         const grid = document.getElementById('product-grid');
@@ -124,7 +124,7 @@
                 <div class="product-info">
                     <h3>${p.nama}</h3>
                     <div class="price">${p.harga}</div>
-                    <a href="https://wa.me/628886225629?text=Halo%20Admin,%20saya%20mau%20order%20${encodeURIComponent(p.nama)}" class="wa-btn" target="_blank">Order via WA</a>
+                    <a href="https://shopee.co.id/malik_x_denzi" class="shopee-btn" target="_blank">Order via Shopee</a>
                 </div>
             `;
             grid.appendChild(card);
